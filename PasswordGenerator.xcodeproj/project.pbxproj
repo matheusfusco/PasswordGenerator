@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		ACD31D0C2050A3DE008205B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D0B2050A3DE008205B4 /* AppDelegate.swift */; };
-		ACD31D0E2050A3DE008205B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D0D2050A3DE008205B4 /* ViewController.swift */; };
+		ACD31D0E2050A3DE008205B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D0D2050A3DE008205B4 /* HomeViewController.swift */; };
 		ACD31D112050A3DE008205B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD31D0F2050A3DE008205B4 /* Main.storyboard */; };
 		ACD31D132050A3DE008205B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD31D122050A3DE008205B4 /* Assets.xcassets */; };
 		ACD31D162050A3DE008205B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD31D142050A3DE008205B4 /* LaunchScreen.storyboard */; };
+		ACD31D202050A942008205B4 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D1F2050A942008205B4 /* UIButton.swift */; };
+		ACD31D232050BEC1008205B4 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D222050BEC1008205B4 /* PasswordViewController.swift */; };
+		ACD31D262050C664008205B4 /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D252050C664008205B4 /* PasswordTableViewCell.swift */; };
+		ACD31D282050C720008205B4 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D272050C720008205B4 /* PasswordGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACD31D082050A3DE008205B4 /* PasswordGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD31D0B2050A3DE008205B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACD31D0D2050A3DE008205B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACD31D0D2050A3DE008205B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ACD31D102050A3DE008205B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACD31D122050A3DE008205B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD31D152050A3DE008205B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD31D172050A3DE008205B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD31D1F2050A942008205B4 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		ACD31D222050BEC1008205B4 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		ACD31D252050C664008205B4 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
+		ACD31D272050C720008205B4 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				ACD31D0B2050A3DE008205B4 /* AppDelegate.swift */,
-				ACD31D0D2050A3DE008205B4 /* ViewController.swift */,
-				ACD31D0F2050A3DE008205B4 /* Main.storyboard */,
+				ACD31D272050C720008205B4 /* PasswordGenerator.swift */,
+				ACD31D212050BEB4008205B4 /* ViewControllers */,
+				ACD31D1D2050A923008205B4 /* Extensions */,
+				ACD31D1E2050A92D008205B4 /* Storyboards */,
 				ACD31D122050A3DE008205B4 /* Assets.xcassets */,
-				ACD31D142050A3DE008205B4 /* LaunchScreen.storyboard */,
 				ACD31D172050A3DE008205B4 /* Info.plist */,
 			);
 			path = PasswordGenerator;
+			sourceTree = "<group>";
+		};
+		ACD31D1D2050A923008205B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACD31D1F2050A942008205B4 /* UIButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACD31D1E2050A92D008205B4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ACD31D0F2050A3DE008205B4 /* Main.storyboard */,
+				ACD31D142050A3DE008205B4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ACD31D212050BEB4008205B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACD31D242050C650008205B4 /* Cells */,
+				ACD31D0D2050A3DE008205B4 /* HomeViewController.swift */,
+				ACD31D222050BEC1008205B4 /* PasswordViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ACD31D242050C650008205B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ACD31D252050C664008205B4 /* PasswordTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +140,7 @@
 				TargetAttributes = {
 					ACD31D072050A3DE008205B4 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,8 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD31D0E2050A3DE008205B4 /* ViewController.swift in Sources */,
+				ACD31D262050C664008205B4 /* PasswordTableViewCell.swift in Sources */,
+				ACD31D0E2050A3DE008205B4 /* HomeViewController.swift in Sources */,
+				ACD31D282050C720008205B4 /* PasswordGenerator.swift in Sources */,
 				ACD31D0C2050A3DE008205B4 /* AppDelegate.swift in Sources */,
+				ACD31D202050A942008205B4 /* UIButton.swift in Sources */,
+				ACD31D232050BEC1008205B4 /* PasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,13 +322,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PasswordGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FIAP.RM45401.PasswordGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,13 +338,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PasswordGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FIAP.RM45401.PasswordGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
