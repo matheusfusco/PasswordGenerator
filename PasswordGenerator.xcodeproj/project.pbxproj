@@ -16,6 +16,7 @@
 		ACD31D232050BEC1008205B4 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D222050BEC1008205B4 /* PasswordViewController.swift */; };
 		ACD31D262050C664008205B4 /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D252050C664008205B4 /* PasswordTableViewCell.swift */; };
 		ACD31D282050C720008205B4 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D272050C720008205B4 /* PasswordGenerator.swift */; };
+		ACD31D2A2050D2A6008205B4 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD31D292050D2A6008205B4 /* TipsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ACD31D222050BEC1008205B4 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		ACD31D252050C664008205B4 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
 		ACD31D272050C720008205B4 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		ACD31D292050D2A6008205B4 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				ACD31D242050C650008205B4 /* Cells */,
 				ACD31D0D2050A3DE008205B4 /* HomeViewController.swift */,
 				ACD31D222050BEC1008205B4 /* PasswordViewController.swift */,
+				ACD31D292050D2A6008205B4 /* TipsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				ACD31D262050C664008205B4 /* PasswordTableViewCell.swift in Sources */,
 				ACD31D0E2050A3DE008205B4 /* HomeViewController.swift in Sources */,
+				ACD31D2A2050D2A6008205B4 /* TipsViewController.swift in Sources */,
 				ACD31D282050C720008205B4 /* PasswordGenerator.swift in Sources */,
 				ACD31D0C2050A3DE008205B4 /* AppDelegate.swift in Sources */,
 				ACD31D202050A942008205B4 /* UIButton.swift in Sources */,

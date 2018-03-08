@@ -218,11 +218,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0S-5b-YOD">
-                                                    <rect key="frame" x="150" y="13.5" width="42" height="40"/>
+                                                    <rect key="frame" x="145.5" y="13.5" width="51.5" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="ixv-XP-QI5"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
                                                     <color key="textColor" red="0.72405058150000001" green="0.16427382830000001" blue="0.44388502839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -291,6 +291,9 @@
                     <navigationItem key="navigationItem" title="Lista de Senhas" id="5x5-Ga-1IK">
                         <barButtonItem key="rightBarButtonItem" image="ic-info" id="6Wf-gf-XVU">
                             <color key="tintColor" red="0.72405058150000001" green="0.16427382830000001" blue="0.44388502839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="BwC-Zy-pZk" kind="presentation" id="qKl-u1-X75"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -300,6 +303,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgo-7Q-n2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1140" y="116.49175412293854"/>
+        </scene>
+        <!--Tips View Controller-->
+        <scene sceneID="rmT-gt-aEB">
+            <objects>
+                <viewController id="BwC-Zy-pZk" customClass="TipsViewController" customModule="PasswordGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ht-kV-EXm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50S-zL-T5W" customClass="CustomButton" customModule="PasswordGenerator" customModuleProvider="target">
+                                <rect key="frame" x="96.5" y="617" width="182" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zpb-b6-Xk2"/>
+                                    <constraint firstAttribute="width" constant="182" id="hsa-h3-cMi"/>
+                                </constraints>
+                                <color key="tintColor" red="0.72405058150000001" green="0.16427382830000001" blue="0.44388502839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Fechar">
+                                    <color key="titleColor" red="0.72405058150000001" green="0.16427382830000001" blue="0.44388502839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeTipsBtnClicked:" destination="BwC-Zy-pZk" eventType="touchUpInside" id="5Hh-G6-7GU"/>
+                                    <action selector="generateAgainBtnClicked:" destination="uIH-Tz-9fR" eventType="touchUpInside" id="i6d-Ka-pgJ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="adK-wb-ODG">
+                                <rect key="frame" x="16" y="20" width="343" height="577"/>
+                                <color key="backgroundColor" red="0.72405058150000001" green="0.16427382830000001" blue="0.44388502839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">1. Escolha senhas fáceis de lembrar 
+Uma senha fácil de guardar na memória evita que o usuário tenha que anotá-la em papeis ou arquivos, que podem chegar às mãos de pessoas erradas.
+
+2. Não use palavras reais 
+Uma palavra que pode ser encontrada no dicionário pode facilitar o trabalho de hackers. Para tornar esse trabalho mais difícil, use frases ao invés de substantivos.
+
+3.  Combine maiúsculas, minúsculas, números e caracteres não alfanuméricos
+A inserção desses itens na senha complica ainda mais o trabalho de quem estiver mal intencionado.
+
+4.  Não recicle senhas
+Por exemplo, não use "senha1 ‘, ' senha2 ‘, ' senha3 ' em contas diferentes. Ao mudar apenas um caractere, o usuário corre o risco de entregar o acesso a outros serviços ao cibercriminoso
+
+5. Não use a mesma senha para várias contas
+O mesmo se aplica nesse caso. Caso o pior aconteça, o usuário perde a segurança de todas as suas contas.
+
+6.   Não use senhas óbvias que podem ser facilmente descobertas
+Não escolha como código o nome de pessoas da família, como filho, marido ou até do animal de estimação. Ao investigar levemente a vida de alguém, esses nomes são facilmente descobertos e podem se tornar uma arma.
+
+7.  Não compartilhe sua senha
+Nunca compartilhe suas informações pessoais. Se alguma empresa pedir sua senha, mesmo que por telefone, não informe. Lembre-se, você não sabe quem está do outro lado da linha telefônica.
+
+8.  Se algum site enviar um e-mail de confirmação com uma nova senha, inicie uma nova sessão na página e altere sua senha imediatamente
+Esse procedimento evita possíveis fraudes. Ao abrir links suspeitos, o usuário pode acabar fornecendo informações pessoais sem perceber.
+
+9.     Certifique-se de que seu software de segurança da Internet bloqueie as intenções dos cibercriminosos de interceptar ou roubar senhas
+Muitos ataques podem ser evitados ao ativar serviços básicos de proteção na internet dos antivírus.
+
+10.  Se você achar que é difícil lembrar-se de várias senhas complexas, considere a instalação de um gerenciadores de senhas 
+Há diversos programas disponíveis que armazenam os dados de maneira segura e ajudam os mais esquecidos.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72405058150000001" green="0.16427382830000001" blue="0.44388502839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bTa-lH-MCx" firstAttribute="trailing" secondItem="adK-wb-ODG" secondAttribute="trailing" constant="16" id="2U9-Wd-WOW"/>
+                            <constraint firstItem="50S-zL-T5W" firstAttribute="centerX" secondItem="bTa-lH-MCx" secondAttribute="centerX" id="WfG-lu-8ta"/>
+                            <constraint firstItem="bTa-lH-MCx" firstAttribute="bottom" secondItem="50S-zL-T5W" secondAttribute="bottom" constant="20" id="jDX-Qn-Uzg"/>
+                            <constraint firstItem="adK-wb-ODG" firstAttribute="leading" secondItem="bTa-lH-MCx" secondAttribute="leading" constant="16" id="ncD-iJ-UoK"/>
+                            <constraint firstItem="adK-wb-ODG" firstAttribute="top" secondItem="bTa-lH-MCx" secondAttribute="top" id="uua-pr-dMP"/>
+                            <constraint firstItem="50S-zL-T5W" firstAttribute="top" secondItem="adK-wb-ODG" secondAttribute="bottom" constant="20" id="vey-6h-Zcf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bTa-lH-MCx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6O-1F-mag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="116.49175412293854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fUL-z5-4bQ">
